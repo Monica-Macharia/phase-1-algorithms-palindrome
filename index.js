@@ -1,13 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // inbuilt functions(split,reverse,join)
+  const stringCheck = word.split('').reverse().join('');
+  if(word === stringCheck){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  The function should return true is the string passed is a palindrome. Return false if its not.
 */
 
 /*
-  Add written explanation of your solution here
+Used in-built functions. First split the text into individual characters using split(). Second, reverse the arrangement of characters using reverse(). Third, join the split and reversed character to form a letter similar to the original input if true. 
 */
 
 // You can run `node index.js` to view these console logs
